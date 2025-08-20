@@ -1,0 +1,7 @@
+<h1>Every User list</h1>
+{% for x in object_list %}
+    <p>{{ x }}</p>
+{% endfor %}
+<form method="post">{% csrf_token %}
+    <button name="choice" value="Home" >Home-Page</button>
+</form>

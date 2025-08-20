@@ -1,0 +1,22 @@
+
+
+
+{% if context == 'login-m'%}
+    <h3>you are logged in as with username : {{ request.user.username }} !'</h3>
+
+{% endif %}
+
+{% if context == 'signup-m'%}
+    <h3>user {{ username }} created</h3>
+
+{% endif %}
+
+{% if context == 'logout-m'%}
+    <h1>logged out of user {{ user.username }} successfully</h1>
+{% endif %}
+
+{% if context == 'not-loggedIn-m'%}
+    <h1>You are not Logged in</h1>
+{% endif %}
+
+{% block HomeButton %}{% endblock %}

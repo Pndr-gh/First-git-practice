@@ -1,0 +1,6 @@
+{% extends 'message.html' %}
+{% block HomeButton %}
+<form method="post">{% csrf_token %}
+    <button name="choice" value="Home" >Home-Page</button>
+</form>
+{% endblock %}

@@ -1,0 +1,27 @@
+<h1>Home page</h1>
+<div style="justify-content: center;
+            align-items: center;">
+        <form method="post">{% csrf_token %}
+
+                <button style="width: 40px;
+                                height: 60px;
+                                border: none;
+                                background-color: cornflowerblue;"
+                        value="login" name="choice">Login</button>
+                <button style="width: 40px;
+                                height: 60px;
+                                border: none;
+                                background-color: cornflowerblue;"
+                        value="signup" name="choice">Signup</button>
+                <button style="width: 40px;
+                                height: 60px;
+                                border: none;
+                                background-color: cornflowerblue;"
+                        value="logout" name="choice">Logout</button>
+                <button style="width: 40px;
+                                height: 60px;
+                                border: none;
+                                background-color: cornflowerblue;"
+                        value="all_users" name="choice">All Users</button>
+        </form>
+</div>

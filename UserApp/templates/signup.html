@@ -1,0 +1,14 @@
+<h1>Sign Up</h1>
+
+{% if form.errors %}
+    <div style="color: red; margin-bottom: 10px;">
+        <strong>There were some problems with your submission:</strong>
+    </div>
+{% endif %}
+<form method="post">{% csrf_token %}
+    {{ form.as_div }}
+    <input type="submit" value="confirm">
+</form>
+<form method="post">{% csrf_token %}
+    <button name="choice" value="Home" >Home-Page</button>
+</form>
